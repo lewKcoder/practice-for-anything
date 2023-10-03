@@ -16,42 +16,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className="tabs">
-          <Tabs>
-            <span>11111</span>
-            <span>22222</span>
-            <span>33333</span>
-            <span>44444</span>
-          </Tabs>
-        </div>
+        <Tabs>
+          <span>11111</span>
+          <span>22222</span>
+          <span>33333</span>
+          <span>44444</span>
+        </Tabs>
       </main>
-
-      <style jsx>{`
-        .tabs {
-          position: relative;
-          display: flex;
-        }
-
-        .tab {
-          flex-grow: 1;
-          text-align: center;
-          cursor: pointer;
-          padding: 10px;
-        }
-
-        .indicator {
-          position: absolute;
-          bottom: 0;
-          height: 3px;
-          background-color: #007bff;
-          transition: left 0.3s ease, width 0.3s ease;
-        }
-
-        #tab1.active + .indicator {
-          left: 0;
-          width: 100px;
-        }
-      `}</style>
     </>
   );
 }

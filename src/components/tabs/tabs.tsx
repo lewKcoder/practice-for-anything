@@ -32,7 +32,7 @@ export const Tabs: FunctionComponent<{ children: ReactNode[] }> = (props) => {
   }, [active]);
 
   return (
-    <>
+    <div className="tabs">
       {children.map((child, index) => (
         <button
           key={index}
@@ -78,6 +78,6 @@ export const Tabs: FunctionComponent<{ children: ReactNode[] }> = (props) => {
           width: 100px;
         }
       `}</style>
-    </>
+    </div>
   );
 };
