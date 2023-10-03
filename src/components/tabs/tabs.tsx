@@ -67,7 +67,8 @@ export const Tabs: FunctionComponent<{ children: ReactNode[] }> = (props) => {
         .indicator {
           position: absolute;
           bottom: 0;
-          height: 3px;
+          height: 100%;
+          opacity: 0.5;
           background-color: #007bff;
           transition: left 0.3s ease, width 0.3s ease;
         }
